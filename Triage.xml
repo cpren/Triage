@@ -133,48 +133,48 @@
                                 </next>
                               </block>
                             </statement>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="oled_cleardisplay" id="21">
                             <next>
-                              <block type="oled_cleardisplay" id="21">
+                              <block type="oled_setcursor" id="22" inline="true">
+                                <value name="STARTX">
+                                  <block type="math_number" id="23">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <value name="STARTY">
+                                  <block type="math_number" id="24">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
                                 <next>
-                                  <block type="oled_setcursor" id="22" inline="true">
-                                    <value name="STARTX">
-                                      <block type="math_number" id="23">
-                                        <field name="NUM">10</field>
-                                      </block>
-                                    </value>
-                                    <value name="STARTY">
-                                      <block type="math_number" id="24">
-                                        <field name="NUM">10</field>
+                                  <block type="oled_drawnumber" id="25" inline="true">
+                                    <value name="NUMBER">
+                                      <block type="variables_get" id="58">
+                                        <field name="VAR">time</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="oled_drawnumber" id="25" inline="true">
-                                        <value name="NUMBER">
-                                          <block type="variables_get" id="58">
-                                            <field name="VAR">time</field>
+                                      <block type="oled_setcursor" id="59" inline="true">
+                                        <value name="STARTX">
+                                          <block type="math_number" id="60">
+                                            <field name="NUM">20</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="math_number" id="61">
+                                            <field name="NUM">20</field>
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="oled_setcursor" id="59" inline="true">
-                                            <value name="STARTX">
-                                              <block type="math_number" id="60">
-                                                <field name="NUM">20</field>
+                                          <block type="oled_drawnumber" id="70" inline="true">
+                                            <value name="NUMBER">
+                                              <block type="variables_get" id="76">
+                                                <field name="VAR">count</field>
                                               </block>
                                             </value>
-                                            <value name="STARTY">
-                                              <block type="math_number" id="61">
-                                                <field name="NUM">20</field>
-                                              </block>
-                                            </value>
-                                            <next>
-                                              <block type="oled_drawnumber" id="70" inline="true">
-                                                <value name="NUMBER">
-                                                  <block type="variables_get" id="76">
-                                                    <field name="VAR">count</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </next>
                                           </block>
                                         </next>
                                       </block>
@@ -184,7 +184,7 @@
                               </block>
                             </next>
                           </block>
-                        </statement>
+                        </next>
                       </block>
                     </next>
                   </block>
