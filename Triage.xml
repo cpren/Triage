@@ -127,12 +127,30 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="oled_drawnumber" id="323" inline="true">
-                                                <value name="NUMBER">
-                                                  <block type="variables_get" id="335">
-                                                    <field name="VAR">timecount</field>
+                                              <block type="oled_cleardisplay" id="347">
+                                                <next>
+                                                  <block type="oled_setcursor" id="336" inline="true">
+                                                    <value name="STARTX">
+                                                      <block type="math_number" id="337">
+                                                        <field name="NUM">10</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="STARTY">
+                                                      <block type="math_number" id="338">
+                                                        <field name="NUM">10</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="oled_drawnumber" id="323" inline="true">
+                                                        <value name="NUMBER">
+                                                          <block type="variables_get" id="335">
+                                                            <field name="VAR">timecount</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
                                                   </block>
-                                                </value>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
