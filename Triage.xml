@@ -226,7 +226,7 @@
                                             </value>
                                             <next>
                                               <block type="oled_drawtext" id="397">
-                                                <field name="TEXT">Time in sec =</field>
+                                                <field name="TEXT">Time (ms) = </field>
                                                 <next>
                                                   <block type="oled_drawnumber" id="57" inline="true">
                                                     <value name="NUMBER">
