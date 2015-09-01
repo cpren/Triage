@@ -1,30 +1,30 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="1" inline="true" x="14" y="13">
-    <field name="VAR">time</field>
+  <block type="variables_set" id="3" inline="true" x="-26" y="-41">
+    <field name="VAR">buttonpause</field>
     <value name="VALUE">
-      <block type="math_number" id="2">
-        <field name="NUM">0</field>
+      <block type="math_number" id="4">
+        <field name="NUM">200</field>
       </block>
     </value>
     <next>
-      <block type="variables_set" id="3" inline="true">
-        <field name="VAR">buttonpause</field>
+      <block type="variables_set" id="5" inline="true">
+        <field name="VAR">count</field>
         <value name="VALUE">
-          <block type="math_number" id="4">
-            <field name="NUM">200</field>
+          <block type="math_number" id="6">
+            <field name="NUM">0</field>
           </block>
         </value>
         <next>
-          <block type="variables_set" id="5" inline="true">
-            <field name="VAR">count</field>
+          <block type="variables_set" id="277" inline="true">
+            <field name="VAR">buttoncount</field>
             <value name="VALUE">
-              <block type="math_number" id="6">
+              <block type="math_number" id="2">
                 <field name="NUM">0</field>
               </block>
             </value>
             <next>
-              <block type="variables_set" id="7" inline="true">
-                <field name="VAR">timedelay</field>
+              <block type="variables_set" id="291" inline="true">
+                <field name="VAR">timecount</field>
                 <value name="VALUE">
                   <block type="math_number" id="8">
                     <field name="NUM">40</field>
@@ -81,13 +81,13 @@
                                         </value>
                                         <next>
                                           <block type="variables_set" id="24" inline="true">
-                                            <field name="VAR">count</field>
+                                            <field name="VAR">buttoncount</field>
                                             <value name="VALUE">
                                               <block type="math_arithmetic" id="25" inline="true">
                                                 <field name="OP">ADD</field>
                                                 <value name="A">
                                                   <block type="variables_get" id="26">
-                                                    <field name="VAR">count</field>
+                                                    <field name="VAR">buttoncount</field>
                                                   </block>
                                                 </value>
                                                 <value name="B">
@@ -97,28 +97,19 @@
                                                 </value>
                                               </block>
                                             </value>
-                                            <next>
-                                              <block type="oled_drawnumber" id="28" inline="true">
-                                                <value name="NUMBER">
-                                                  <block type="variables_get" id="29">
-                                                    <field name="VAR">count</field>
-                                                  </block>
-                                                </value>
-                                              </block>
-                                            </next>
                                           </block>
                                         </next>
                                       </block>
                                     </statement>
                                     <next>
                                       <block type="variables_set" id="32" inline="true">
-                                        <field name="VAR">time</field>
+                                        <field name="VAR">timecount</field>
                                         <value name="VALUE">
                                           <block type="math_arithmetic" id="33" inline="true">
                                             <field name="OP">ADD</field>
                                             <value name="A">
                                               <block type="variables_get" id="34">
-                                                <field name="VAR">time</field>
+                                                <field name="VAR">timecount</field>
                                               </block>
                                             </value>
                                             <value name="B">
@@ -132,36 +123,9 @@
                                           <block type="robot_delay" id="30" inline="true">
                                             <value name="DELAY">
                                               <block type="variables_get" id="83">
-                                                <field name="VAR">timedelay</field>
+                                                <field name="VAR">timeincriment</field>
                                               </block>
                                             </value>
-                                            <next>
-                                              <block type="oled_cleardisplay" id="36">
-                                                <next>
-                                                  <block type="oled_setcursor" id="37" inline="true">
-                                                    <value name="STARTX">
-                                                      <block type="math_number" id="38">
-                                                        <field name="NUM">40</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="STARTY">
-                                                      <block type="math_number" id="39">
-                                                        <field name="NUM">40</field>
-                                                      </block>
-                                                    </value>
-                                                    <next>
-                                                      <block type="oled_drawnumber" id="40" inline="true">
-                                                        <value name="NUMBER">
-                                                          <block type="variables_get" id="41">
-                                                            <field name="VAR">time</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </next>
-                                              </block>
-                                            </next>
                                           </block>
                                         </next>
                                       </block>
