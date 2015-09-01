@@ -54,7 +54,7 @@
                             </value>
                             <next>
                               <block type="oled_drawtext" id="13">
-                                <field name="TEXT">Tap with your pulse</field>
+                                <field name="TEXT">Tap with your pulse in</field>
                                 <next>
                                   <block type="oled_setcursor" id="584" inline="true">
                                     <value name="STARTX">
