@@ -148,34 +148,39 @@
                                                           </block>
                                                         </value>
                                                         <next>
-                                                          <block type="oled_drawnumber" id="323" inline="true">
-                                                            <value name="NUMBER">
-                                                              <block type="variables_get" id="335">
-                                                                <field name="VAR">timecount</field>
-                                                              </block>
-                                                            </value>
+                                                          <block type="oled_drawtext" id="432">
+                                                            <field name="TEXT">START</field>
                                                             <next>
-                                                              <block type="oled_setcursor" id="348" inline="true">
-                                                                <value name="STARTX">
-                                                                  <block type="math_number" id="349">
-                                                                    <field name="NUM">50</field>
-                                                                  </block>
-                                                                </value>
-                                                                <value name="STARTY">
-                                                                  <block type="math_number" id="350">
-                                                                    <field name="NUM">10</field>
+                                                              <block type="oled_drawnumber" id="323" inline="true">
+                                                                <value name="NUMBER">
+                                                                  <block type="variables_get" id="335">
+                                                                    <field name="VAR">timecount</field>
                                                                   </block>
                                                                 </value>
                                                                 <next>
-                                                                  <block type="oled_drawtext" id="414">
-                                                                    <field name="TEXT">Beat #</field>
+                                                                  <block type="oled_setcursor" id="348" inline="true">
+                                                                    <value name="STARTX">
+                                                                      <block type="math_number" id="349">
+                                                                        <field name="NUM">50</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="STARTY">
+                                                                      <block type="math_number" id="350">
+                                                                        <field name="NUM">10</field>
+                                                                      </block>
+                                                                    </value>
                                                                     <next>
-                                                                      <block type="oled_drawnumber" id="376" inline="true">
-                                                                        <value name="NUMBER">
-                                                                          <block type="variables_get" id="388">
-                                                                            <field name="VAR">buttoncount</field>
+                                                                      <block type="oled_drawtext" id="414">
+                                                                        <field name="TEXT">Beat #</field>
+                                                                        <next>
+                                                                          <block type="oled_drawnumber" id="376" inline="true">
+                                                                            <value name="NUMBER">
+                                                                              <block type="variables_get" id="388">
+                                                                                <field name="VAR">buttoncount</field>
+                                                                              </block>
+                                                                            </value>
                                                                           </block>
-                                                                        </value>
+                                                                        </next>
                                                                       </block>
                                                                     </next>
                                                                   </block>
