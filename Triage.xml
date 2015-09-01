@@ -225,12 +225,17 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="oled_drawnumber" id="57" inline="true">
-                                                <value name="NUMBER">
-                                                  <block type="variables_get" id="58">
-                                                    <field name="VAR">realtime</field>
+                                              <block type="oled_drawtext" id="397">
+                                                <field name="TEXT">Time in sec =</field>
+                                                <next>
+                                                  <block type="oled_drawnumber" id="57" inline="true">
+                                                    <value name="NUMBER">
+                                                      <block type="variables_get" id="58">
+                                                        <field name="VAR">realtime</field>
+                                                      </block>
+                                                    </value>
                                                   </block>
-                                                </value>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
