@@ -126,6 +126,15 @@
                                                 </value>
                                               </block>
                                             </value>
+                                            <next>
+                                              <block type="oled_drawnumber" id="323" inline="true">
+                                                <value name="NUMBER">
+                                                  <block type="variables_get" id="335">
+                                                    <field name="VAR">timecount</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
