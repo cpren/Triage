@@ -284,36 +284,56 @@
                                                                           <block type="variables_set" id="95" inline="true">
                                                                             <field name="VAR">bpm</field>
                                                                             <value name="VALUE">
-                                                                              <block type="math_arithmetic" id="154" inline="true">
-                                                                                <field name="OP">MULTIPLY</field>
+                                                                              <block type="math_arithmetic" id="258" inline="true">
+                                                                                <field name="OP">DIVIDE</field>
                                                                                 <value name="A">
-                                                                                  <block type="math_arithmetic" id="105" inline="true">
-                                                                                    <field name="OP">DIVIDE</field>
+                                                                                  <block type="math_arithmetic" id="154" inline="true">
+                                                                                    <field name="OP">MULTIPLY</field>
                                                                                     <value name="A">
-                                                                                      <block type="math_number" id="112">
-                                                                                        <field name="NUM">1</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <value name="B">
-                                                                                      <block type="math_arithmetic" id="126" inline="true">
+                                                                                      <block type="math_arithmetic" id="105" inline="true">
                                                                                         <field name="OP">DIVIDE</field>
                                                                                         <value name="A">
-                                                                                          <block type="variables_get" id="147">
-                                                                                            <field name="VAR">realtime</field>
+                                                                                          <block type="math_number" id="112">
+                                                                                            <field name="NUM">1</field>
                                                                                           </block>
                                                                                         </value>
                                                                                         <value name="B">
-                                                                                          <block type="math_number" id="133">
-                                                                                            <field name="NUM">10</field>
+                                                                                          <block type="math_arithmetic" id="126" inline="true">
+                                                                                            <field name="OP">DIVIDE</field>
+                                                                                            <value name="A">
+                                                                                              <block type="math_arithmetic" id="244" inline="true">
+                                                                                                <field name="OP">MULTIPLY</field>
+                                                                                                <value name="A">
+                                                                                                  <block type="variables_get" id="147">
+                                                                                                    <field name="VAR">realtime</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="B">
+                                                                                                  <block type="math_number" id="251">
+                                                                                                    <field name="NUM">10000</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="B">
+                                                                                              <block type="math_number" id="133">
+                                                                                                <field name="NUM">10</field>
+                                                                                              </block>
+                                                                                            </value>
                                                                                           </block>
                                                                                         </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="B">
+                                                                                      <block type="math_number" id="161">
+                                                                                        <field name="NUM">6</field>
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="B">
-                                                                                  <block type="math_number" id="161">
-                                                                                    <field name="NUM">6</field>
+                                                                                  <block type="math_number" id="265">
+                                                                                    <field name="NUM">10000</field>
                                                                                   </block>
                                                                                 </value>
                                                                               </block>
