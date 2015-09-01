@@ -55,7 +55,7 @@
                                     <field name="OP">LT</field>
                                     <value name="A">
                                       <block type="variables_get" id="18">
-                                        <field name="VAR">timecount</field>
+                                        <field name="VAR">buttoncount</field>
                                       </block>
                                     </value>
                                     <value name="B">
