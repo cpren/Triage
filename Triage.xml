@@ -222,8 +222,18 @@
                                                                                                               </block>
                                                                                                             </value>
                                                                                                             <value name="B">
-                                                                                                              <block type="math_number" id="46">
-                                                                                                                <field name="NUM">100</field>
+                                                                                                              <block type="math_arithmetic" id="631" inline="true">
+                                                                                                                <field name="OP">MULTIPLY</field>
+                                                                                                                <value name="A">
+                                                                                                                  <block type="variables_get" id="643">
+                                                                                                                    <field name="VAR">timeincriment</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                                <value name="B">
+                                                                                                                  <block type="math_number" id="46">
+                                                                                                                    <field name="NUM">10</field>
+                                                                                                                  </block>
+                                                                                                                </value>
                                                                                                               </block>
                                                                                                             </value>
                                                                                                           </block>
