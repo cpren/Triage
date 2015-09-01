@@ -229,8 +229,18 @@
                                                                                                           </block>
                                                                                                         </value>
                                                                                                         <value name="B">
-                                                                                                          <block type="math_number" id="47">
-                                                                                                            <field name="NUM">2000</field>
+                                                                                                          <block type="math_arithmetic" id="600" inline="true">
+                                                                                                            <field name="OP">MULTIPLY</field>
+                                                                                                            <value name="A">
+                                                                                                              <block type="variables_get" id="612">
+                                                                                                                <field name="VAR">buttonpause</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <value name="B">
+                                                                                                              <block type="variables_get" id="624">
+                                                                                                                <field name="VAR">buttoncount</field>
+                                                                                                              </block>
+                                                                                                            </value>
                                                                                                           </block>
                                                                                                         </value>
                                                                                                       </block>
