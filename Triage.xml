@@ -27,7 +27,7 @@
                 <field name="VAR">timedelay</field>
                 <value name="VALUE">
                   <block type="math_number" id="8">
-                    <field name="NUM">10</field>
+                    <field name="NUM">40</field>
                   </block>
                 </value>
                 <next>
@@ -139,8 +139,8 @@
                                             <next>
                                               <block type="robot_delay" id="30" inline="true">
                                                 <value name="DELAY">
-                                                  <block type="math_number" id="31">
-                                                    <field name="NUM">40</field>
+                                                  <block type="variables_get" id="83">
+                                                    <field name="VAR">timedelay</field>
                                                   </block>
                                                 </value>
                                                 <next>
