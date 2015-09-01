@@ -49,7 +49,7 @@
                             <field name="TEXT">Tap 10 times</field>
                             <next>
                               <block type="controls_whileUntil" id="14" inline="false">
-                                <field name="MODE">UNTIL</field>
+                                <field name="MODE">WHILE</field>
                                 <value name="NUMBER">
                                   <block type="sensor_button" id="15">
                                     <field name="OBJECT">RIGHT</field>
