@@ -54,7 +54,7 @@
                             </value>
                             <next>
                               <block type="oled_drawtext" id="13">
-                                <field name="TEXT">Tap 10 times in: </field>
+                                <field name="TEXT">Tap 10 times in:</field>
                                 <next>
                                   <block type="oled_drawtext" id="433">
                                     <field name="TEXT">3 </field>
@@ -67,7 +67,7 @@
                                         </value>
                                         <next>
                                           <block type="oled_drawtext" id="434">
-                                            <field name="TEXT">2 </field>
+                                            <field name="TEXT">2</field>
                                             <next>
                                               <block type="robot_delay" id="435" inline="true">
                                                 <value name="DELAY">
@@ -185,7 +185,7 @@
                                                                                         </value>
                                                                                         <next>
                                                                                           <block type="oled_drawtext" id="432">
-                                                                                            <field name="TEXT"> Running  </field>
+                                                                                            <field name="TEXT"> Running </field>
                                                                                             <next>
                                                                                               <block type="oled_drawnumber" id="323" inline="true">
                                                                                                 <value name="NUMBER">
